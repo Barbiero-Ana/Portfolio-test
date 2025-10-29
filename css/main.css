@@ -1,6 +1,3 @@
-/* ================================
-   HERO SECTION
-   ================================ */
 .hero {
   padding: 5rem 0;
   background: linear-gradient(135deg, var(--sage) 0%, var(--cream) 100%);
@@ -77,9 +74,6 @@
   object-fit: cover;
 }
 
-/* ================================
-   SOBRE SECTION
-   ================================ */
 .sobre {
   padding: 5rem 0;
   background: var(--cream);
@@ -162,9 +156,6 @@
   font-weight: 500;
 }
 
-/* ================================
-   PROJETOS SECTION
-   ================================ */
 .projetos {
   padding: 5rem 0;
   background: linear-gradient(180deg, var(--cream) 0%, var(--sage) 100%);
@@ -254,9 +245,6 @@
   transition: var(--transition);
 }
 
-/* ================================
-   CONTATO SECTION
-   ================================ */
 .contato {
   padding: 5rem 0;
   background: var(--cream);
@@ -355,9 +343,6 @@
   transform: translateX(5px);
 }
 
-/* ================================
-   ANIMAÇÕES
-   ================================ */
 @keyframes fadeInUp {
   from {
     opacity: 0;
