@@ -1,0 +1,113 @@
+/* ================================
+   RESET E VARIÁVEIS
+   ================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Paleta Coolors - https://coolors.co/palette/faf3dd-c8d5b9-8fc0a9-68b0ab-4a7c59 */
+  --cream: #FAF3DD;           /* Bege claro */
+  --sage: #C8D5B9;            /* Verde sage */
+  --mint: #8FC0A9;            /* Verde menta */
+  --teal: #68B0AB;            /* Verde azulado */
+  --forest: #4A7C59;          /* Verde floresta */
+
+  /* Aplicação das cores - Modo Claro */
+  --primary-green: #4A7C59;   /* forest */
+  --secondary-green: #68B0AB; /* teal */
+  --light-green: #8FC0A9;     /* mint */
+  --accent-green: #C8D5B9;    /* sage */
+  --pale-green: #C8D5B9;      /* sage */
+  --off-white: #FAF3DD;       /* cream */
+  --cream-bg: #FAF3DD;        /* cream */
+  --dark-text: #4A7C59;       /* forest */
+  --medium-text: #68B0AB;     /* teal */
+  --light-text: #8FC0A9;      /* mint */
+  --bg-card: #ffffff;         /* branco */
+
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(74, 124, 89, 0.1);
+  --shadow-md: 0 4px 16px rgba(74, 124, 89, 0.15);
+  --shadow-lg: 0 8px 32px rgba(74, 124, 89, 0.2);
+
+  /* Transições */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modo Escuro */
+body.dark-mode {
+  --cream: #1a1f16;           /* Fundo escuro */
+  --sage: #2d3d2a;            /* Verde escuro sage */
+  --mint: #5a8f7a;            /* Verde menta escuro */
+  --teal: #4d8d83;            /* Verde azulado escuro */
+  --forest: #74c69d;          /* Verde floresta claro */
+
+  --primary-green: #74c69d;   /* forest claro */
+  --secondary-green: #4d8d83; /* teal escuro */
+  --light-green: #5a8f7a;     /* mint escuro */
+  --accent-green: #2d3d2a;    /* sage escuro */
+  --pale-green: #2d3d2a;      /* sage escuro */
+  --off-white: #1a1f16;       /* fundo escuro */
+  --cream-bg: #1a1f16;        /* fundo escuro */
+  --dark-text: #b7e4c7;       /* texto claro */
+  --medium-text: #95d5b2;     /* texto médio */
+  --light-text: #74c69d;      /* texto suave */
+  --bg-card: #242b1f;         /* card escuro */
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cream);
+  color: var(--dark-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Botão de Modo Escuro */
+.theme-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal), var(--forest));
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: var(--transition);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1) rotate(15deg);
+  box-shadow: 0 8px 40px rgba(74, 124, 89, 0.3);
+}
+
+.theme-toggle i {
+  transition: var(--transition);
+}
